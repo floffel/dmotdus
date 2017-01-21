@@ -1,0 +1,10 @@
+[Unit]
+Description=Update of the system MOTD
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=10m
+
+[Install]
+WantedBy=multi-user.target
+

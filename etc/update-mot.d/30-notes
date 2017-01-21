@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "
+  _   _   _   _   _  
+ / \ / \ / \ / \ / \ 
+( N | o | t | e | s )
+ \_________________/ 
+"
+
+# Just cat the notes from root's home /..
+cat /root/notes.txt

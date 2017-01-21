@@ -1,0 +1,16 @@
+#!/bin/bash
+
+BACKGROUND='\033[30;48;5;230m '
+RESTORE='\033[0m'
+
+echo "===================================================================================="
+# Get the history files and display them
+for HF in /etc/history-motd/*; do
+        echo -e -n "\033[7m"
+        echo "$HF - $(stat -c '%U' $HF):"
+        echo -e -n "$RESTORE"
+        echo -e -n "\033[7m"
+        while read -r l; do printf "# %-80s #\n" "$l"; done < "$HF";
+        echo -e -n "$RESTORE"
+        echo "===================================================================================="
+done
