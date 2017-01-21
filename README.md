@@ -4,11 +4,15 @@ Update-MOTD
 This repository provides some basic scripts I am using for generating a nice & informative /etc/motd.
 I use this on my personal arch server, feel free to adapt it to your own needs & servers.
 
+## Screenshot:
+![Screenshot of the cat](https://github.com/floffel03/systemd_motd-update/blob/master/screenshot.png?raw=true)
+
+
 ## Usage
 See the file tree below and push the files into the right directory.
 
 ## Files
-
+```
 ├── etc                                                                                     -> Your /etc/. Yep, u'll obviously need a *nix
 │   ├── history-motd                                                                        -> Folder for your history files. They should be named like theire date of creation
 │   │   ├── 20.01.2017                                                                      -> Just a sample of a history log I created at 20.01.2017 -> You can safely delete it
@@ -31,3 +35,4 @@ See the file tree below and push the files into the right directory.
             └── system
                 ├── update-motd.service                                                     -> This is the system.d service file. For more Information see [TODO]
                 └── update-motd.timer                                                       -> This is the system.d timer file. How often motd will be generated? You can adjust the timing
+```
