@@ -14,7 +14,7 @@
 DATE=`date +%d.%m.%Y` # get the current date, used for adding a sample history file 
 
 echo "I warned you.. You should have read the whole Script.. But here I go..."	# yep, warned ya
-mkdir -p {/etc/update-mot.d,/etc/history-motd}					# create dir's @/etc
+mkdir -p {/etc/update-motd.d,/etc/history-motd}					# create dir's @/etc
 cp ./etc/update-motd.d/* /etc/update-motd.d/				        # copy motd-building-files 
 cp ./usr/lib/systemd/system/update-motd.* /usr/lib/systemd/system/	        # copy systemd startuo files
 cp ./usr/bin/update-motd /usr/bin					        # copy main executable file
