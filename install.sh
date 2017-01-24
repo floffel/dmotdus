@@ -20,6 +20,7 @@ cp ./usr/lib/systemd/system/update-motd.* /usr/lib/systemd/system/	        # cop
 cp ./usr/bin/update-motd /usr/bin					        # copy main executable file
 chmod +x {/usr/bin/update-motd, chmod +x /etc/update-motd.d/*}							# make the main file executable
 echo "-> Installed dynamic motd update system" > /etc/history-motd/current	# add sample history file 
+echo "NOTES: Edit me @ /root/notes.txt" > /root/notes.txt # add notes file
 echo "Starting Service now..."							# give the user a heads-up
 systemctl start update-motd							# start the dmotdus
 echo "Finished installing.. Please run manually for running update-motd at start-up:"
