@@ -24,4 +24,4 @@ echo "NOTES: Edit me @ /root/notes.txt" > /root/notes.txt # add notes file
 echo "Starting Service now..."							# give the user a heads-up
 systemctl start update-motd							# start the dmotdus
 echo "Finished installing.. Please run manually for running update-motd at start-up:"
-echo "$ systemctl start update-motd"
+echo "$ systemctl enable update-motd"
