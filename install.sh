@@ -24,5 +24,5 @@ echo "NOTES: Edit me @ /root/notes.txt" > /root/notes.txt # add notes file
 echo "Starting Service now..."							# give the user a heads-up
 systemctl start update-motd							# start the dmotdus
 systemctl enable update-motd
-echo "alias motdedit='vim /etc/history-motd/$(date +%d.%m.%Y)'" >> ~/.bashrc
+echo 'alias motdedit="vim /etc/history-motd/$(date +%d.%m.%Y)"' >> ~/.bashrc
 echo "a new alias was addded to your bashrc: motdedit"
